@@ -1,6 +1,6 @@
 body { 
-	margin: 10px auto; 
-	width: 95%;
+	margin: 20px auto; 
+	width: 90%;
 	line-height: 1.5em;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
  }
@@ -34,7 +34,7 @@ ul.posts { margin: 10px auto 20px; font-size: 1.1em; }
 ul.posts li { list-style: none; }
 
 /* CV */
-.cv { margin: 0px 0px 60px; }
+.cv { margin: 4px 4px 60px; }
 .cv h1 { font-size: 3em; }
 .cv h2 { font-size: 2em; }
 .cv address, .cv .download { 
