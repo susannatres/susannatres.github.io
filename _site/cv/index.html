@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
 
 <meta charset="UTF-8">
 
-<!-- IMPORTANT per mòbil -->
+<!-- CRÍTIC per iPhone -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>CV of Susanna Tres</title>
@@ -13,36 +14,71 @@
 
 <style>
 
-/* Amplada llegible */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 1rem;
+/* Reset estable */
+* {
+    box-sizing: border-box;
 }
 
-/* Tipografia */
+/* Evita desplaçaments laterals */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Contenidor centrat real */
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* Tipografia llegible */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
     color: #2f2f2f;
-    margin: 0;
 }
 
-/* Navegació normal (ordinador) */
+/* Imatges sempre correctes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Evita overflow inesperat */
+iframe,
+table,
+pre {
+    max-width: 100%;
+}
+
+/* ===== Navegació ordinador ===== */
 
 nav {
     background: #f5f5f5;
-    padding: 0.7rem 0;
     border-bottom: 1px solid #e5e5e5;
+    padding: 0.7rem 0;
+    width: 100%;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+
     display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;   /* ← IMPORTANT */
+}
+
+nav li {
+    min-width: 0;      /* ← IMPORTANT */
 }
 
 nav a {
@@ -51,20 +87,15 @@ nav a {
     font-weight: 500;
 }
 
-/* Imatges mai deformades */
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Footer */
+/* ===== Footer ===== */
 
 footer {
     margin-top: 3rem;
     padding: 1rem;
     text-align: center;
     background: #f5f5f5;
+    width: 100%;
 }
 
 footer ul {
@@ -80,16 +111,15 @@ footer li {
 
 /* ===== MÒBIL ===== */
 
-@media (max-width: 700px) {
+@media (max-width:700px) {
 
 .container {
     padding: 0.8rem;
 }
 
-/* Menú compacte */
+/* Menú adaptat a dit */
 
 nav ul {
-    flex-wrap: wrap;
     gap: 0.4rem;
 }
 
@@ -109,20 +139,26 @@ nav a {
 
 </style>
 
-
 </head>
 
 <body>
 
 <nav>
 <ul>
+
 <li><a href="/">Home</a></li>
+
 <li><a href="/atencio">Atenció Psicològica</a></li>
+
 <li><a href="/xerrades">Activitats</a></li>
+
 <li><a href="/cv">CV i Trajectòria</a></li>
+
 <li><a href="/pubs">Publicacions</a></li>
+
 </ul>
 </nav>
+
 
 <div class="container">
 
@@ -294,11 +330,17 @@ Molins de Rei.<br>
 
 </div>
 
+
 <footer>
+
 <ul>
+
 <li><a href="mailto:trescoca@gmail.com">email</a></li>
+
 <li><a href="https://github.com/susannatres">github.com/susannatres</a></li>
+
 </ul>
+
 </footer>
 
 </body>
